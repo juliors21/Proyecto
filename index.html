@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Postres's 90</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Geist+Mono:wght@100..900&family=Lexend+Exa:wght@100..900&family=Merienda:wght@300..900&family=Permanent+Marker&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__icon" id="menuToggle">
+      <img class="header__icon-img" src="img/menu-hamburguesa.png" alt="Icono Menu" />
+    </div>
+    <img class="header__logo" src="img/reposteFondo.jpg" alt="logo" />
+    <div class="header__icon" id="cartToggle" style="position: relative;">
+      <img class="header__icon-img" src="img/carrito-de-compra-anadir.png" alt="Icono Carrito" />
+      <span id="cartBadge" class="cart-badge" style="display:none;">0</span>
+    </div>
+  </header>
+
+  <!-- Menú lateral izquierdo -->
+  <aside id="sideMenu" class="side-menu">
+    <button id="closeSideMenu" class="close-btn">✕</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#carrito">Carrito de compras</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Menú lateral derecho (carrito) -->
+  <aside id="cartMenu" class="cart-menu">
+    <button id="closeCartMenu" class="close-btn">✕</button>
+    <h2>Carrito</h2>
+    <div id="cartItemsContainer" class="cart-items-container">
+      <!-- Productos añadidos -->
+    </div>
+  </aside>
+
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner__content">
+      <h1 class="banner__title">Postres's 90</h1>
+      <p class="banner__subtitle">Los mejores postres caseros para endulzar tu día</p>
+    </div>
+  </section>
+
+  <!-- Productos / Galería -->
+  <main>
+    <section id="galeria" class="products">
+      <article class="products__item" data-id="1" data-name="MINI FLAN" data-price="60" data-img="img/miniflan.jpg">
+        <img class="products__image" src="img/miniflan.jpg" alt="Mini Flan" />
+        <h3 class="products__title">MINI FLAN</h3>
+        <p class="products__description">$60.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </article>
+
+      <article class="products__item" data-id="2" data-name="MOUSSE DE CHOCOLATE" data-price="80" data-img="img/mushchocolate.jfif">
+        <img class="products__image" src="img/mushchocolate.jfif" alt="Mousse de chocolate" />
+        <h3 class="products__title">MOUSSE DE CHOCOLATE</h3>
+        <p class="products__description">$80.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </article>
+
+      <article class="products__item" data-id="3" data-name="FLAN" data-price="260" data-img="img/rebanadaflan.jfif">
+        <img class="products__image" src="img/rebanadaflan.jfif" alt="Flan" />
+        <h3 class="products__title">FLAN</h3>
+        <p class="products__description">$260.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </article>
+
+      <article class="products__item" data-id="4" data-name="PAY DE LIMÓN" data-price="300" data-img="img/limon.jpg">
+        <img class="products__image" src="img/limon.jpg" alt="Pay de limón" />
+        <h3 class="products__title">PAY DE LIMÓN</h3>
+        <p class="products__description">$300.00</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </article>
+
+      <!-- Agrega más productos aquí -->
+    </section>
+  </main>
+
+  <script src="js/function.js"></script>
+</body>
+</html>
